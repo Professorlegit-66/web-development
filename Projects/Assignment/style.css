@@ -1,0 +1,174 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box; 
+}
+
+/* Base Body */
+body {
+    background-color: #ffffff;
+    color: #1f2937;
+}
+
+/* Centered Navigation */
+.header-nav {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 25px 10px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.header-nav a {
+    color: #4b5563;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 15px;
+    padding-bottom: 5px;
+}
+
+/* Centered Hero Banner */
+.hero-banner {
+    background-color: #f8fafc;
+    text-align: center;
+    margin: 20px;
+    padding: 100px 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.hero-banner h1 {
+    font-size: 50px;
+    color: #111827;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    font-size: 22px;
+    color: #4f46e5;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.bio-short {
+    font-size: 18px;
+    color: #4b5563;
+    margin-bottom: 40px;
+}
+
+.primary-btn {
+    background-color: #4f46e5;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/* General Page Sections */
+.page-section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.alternate-bg {
+    background-color: #f8fafc;
+}
+
+.section-heading {
+    font-size: 32px;
+    color: #111827;
+    margin-bottom: 30px;
+}
+
+.section-text {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #4b5563;
+}
+
+/* Skill Pills (replaces the boxes) */
+.center-container {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill-pill {
+    display: inline-block;
+    background-color: #e0e7ff;
+    color: #3730a3;
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+/* Content Cards for Projects/Certs (2-Column Layout) */
+.content-card {
+    display: inline-block;
+    background-color: #ffffff;
+    width: 45%;
+    margin: 15px 15px 15px 0;
+    padding: 35px 25px;
+    vertical-align: top;
+    text-align: left;
+    border: 1px solid #434548;
+}
+
+.content-card h3 {
+    font-size: 22px;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.content-card p {
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.meta-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #6b7280 !important;
+    margin-bottom: 15px !important;
+}
+
+/* Footer Area */
+.footer-area {
+    background-color: #1f2937;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.footer-area h2 {
+    margin-bottom: 15px;
+}
+
+.footer-area p {
+    margin-bottom: 30px;
+    color: #d1d5db;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.footer-copyright p {
+    margin-bottom: 0;
+    color: #d1d5db;
+}
