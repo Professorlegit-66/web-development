@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Demonstration</title>
+    <!-- Linking the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ID Unique Selector (#header) & Simple Selector (h1) -->
+    <div id="header">
+        <h1>Welcome to My Website</h1>
+        <!-- Next sibling combinator (h1 + p) -->
+        <p>This paragraph immediately follows the h1 inside the header and will be italicized.</p>
+    </div>
+
+    <h2>Section Heading</h2>
+
+    <!-- Classes (.classname) -->
+    <p class="highlight">This is a regular paragraph with a highlight class applied.</p>
+
+    <!-- Combinator Demonstrations -->
+    <div>
+        <!-- Child Combinator (div > p) AND Descendant Combinator (div p) -->
+        <p>This is a direct child paragraph of the div (it will be bold and gray).</p>
+        
+        <section>
+            <!-- Descendant Combinator only (div p, but NOT div > p) -->
+            <p>This paragraph is inside a section nested within the div. It is a descendant, but NOT a direct child, so it will be gray but NOT bold.</p>
+        </section>
+    </div>
+
+</body>
+</html>

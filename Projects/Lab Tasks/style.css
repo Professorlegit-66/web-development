@@ -1,0 +1,48 @@
+/* 1. Universal Selector (*)[cite: 1] */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+}
+
+/* 4. ID Unique Selector (#idname)[cite: 1] */
+#header {
+    text-align: center; /*[cite: 1] */
+    background-color: #eef2f5;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* 2. Simple Selector (element)[cite: 1] */
+h1 {
+    color: navy; /*[cite: 1] */
+}
+
+/* 5. Groups multiple (element1, element2)[cite: 1] */
+h1, h2, p {
+    font-family: Arial, sans-serif; /*[cite: 1] */
+}
+
+/* 3. Classes (.classname)[cite: 1] */
+.highlight {
+    background-color: yellow; /*[cite: 1] */
+}
+
+/* 6. Descendant combinator (element1 element2)[cite: 1] */
+div p {
+    color: gray; /*[cite: 1] */
+}
+
+/* 7. Child combinator (element1 > element2)[cite: 1] */
+div > p {
+    font-weight: bold; /*[cite: 1] */
+}
+
+/* 8. Next sibling combinator (element1 + element2)[cite: 1] */
+h1 + p {
+    font-style: italic; /*[cite: 1] */
+}
