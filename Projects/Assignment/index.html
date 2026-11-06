@@ -1,98 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talha Ahmad | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Centered Navigation -->
-    <div class="header-nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certs">Certifications</a>
-    </div>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <span class="logo"></span>
+            </div>
+            <div class="nav-right">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#gallery">Skills</a>
+                <a href="#certs">Certifications</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-    <!-- Centered Hero Section -->
-    <div id="home" class="hero-banner">
-        <h1>Talha Ahmad</h1>
-        <p class="tagline">AI / ML Engineer & Data Scientist</p>
-        <p class="bio-short">Pursuing Software Engineering and building agentic AI systems.</p>
-        <a href="#contact" class="primary-btn">Get In Touch</a>
-    </div>
+    <main>
+        <section id="home" class="hero-banner">
+            <h1>Talha Ahmad</h1>
+            <p class="tagline">AI / ML Engineer & Data Scientist</p>
+            <p class="bio-short">Pursuing Software Engineering and building agentic AI systems.</p>
+            <a href="#contact" class="primary-btn">Get In Touch</a>
+        </section>
 
-    <!-- About Section -->
-    <div id="about" class="page-section alternate-bg">
-        <h2 class="section-heading">About My Journey:</h2>
-        <p class="section-text">I am a passionate AI/ML Engineer currently pursuing my degree in Software Engineering. My main focus is on developing intelligent agentic AI systems and utilizing machine learning to build tools that enhance modern learning experiences.</p>
-    </div>
+        <div class="main-layout">
+            <aside class="sidebar">
+                <img src="Images/Portfolio Picture.jpeg" alt="Talha Ahmad" class="profile-pic">
+                <h2>Talha Ahmad</h2>
+                <p>BS Software Engineering</p>
+                <p>Kohat University of Science & Technology</p>
+            </aside>
 
-    <!-- Skills Section -->
-    <div id="skills" class="page-section">
-        <h2 class="section-heading">Technical Focus:</h2>
-        <div class="center-container">
-            <div class="skill-pill">Python & Data Science</div>
-            <div class="skill-pill">Machine Learning & Deep Learning</div>
-            <div class="skill-pill">React & FastAPI</div>
-            <div class="skill-pill">Agentic AI & RAG Systems</div>
+            <div class="content-area">
+                <section id="about">
+                    <h2 class="section-heading">About Me:</h2>
+                    <p>I am a passionate AI/ML Engineer currently pursuing my degree in Software Engineering. My main focus is on developing intelligent agentic AI systems and utilizing machine learning to build tools that enhance modern learning experiences.</p>
+                </section>
+
+                <section id="projects">
+                    <h2 class="section-heading">Recent Projects:</h2>
+                    <div class="cards-grid">
+                        <div class="card">
+                            <img src="Images/StudyVault Logo.jpg" alt="StudyVault AI">
+                            <h3>StudyVault AI</h3>
+                            <p>An academic study assistant powered by multi-document RAG and smart flashcards.</p>
+                            <a href="https://studyvault-ai-gamma.vercel.app/" class="card-btn">View Project</a>
+                        </div>
+                        <div class="card">
+                            <img src="Images/PathPilot Logo.jpg" alt="PathPilot AI">
+                            <h3>PathPilot AI</h3>
+                            <p>An intelligent education and career navigator that generates personalized roadmaps.</p>
+                            <a href="https://pathpilot-ai-phi.vercel.app/" class="card-btn">View Project</a>
+                        </div>
+                        <div class="card">
+                            <img src="Images/Document Summarizer Logo.jpg" alt="Document Summarizer">
+                            <h3>Document Summarizer</h3>
+                            <p>A full-stack application that rapidly summarizes PDF, DOCX, and TXT files using AI.</p>
+                            <a href="https://document-summarizer.talhakhan111221.workers.dev/" class="card-btn">View Project</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="gallery">
+                    <h2 class="section-heading">Technical Focus:</h2>
+                    <div class="gallery-grid">
+                        <div class="skill-item">Python & Data Science</div>
+                        <div class="skill-item">Machine Learning</div>
+                        <div class="skill-item">React & FastAPI</div>
+                        <div class="skill-item">Agentic AI & RAG Systems</div>
+                    </div>
+                </section>
+
+                <!-- Certifications Section -->
+                <section id="certs">
+                    <h2 class="section-heading">Certifications:</h2>
+                    <div class="cards-grid">
+                        <div class="card">
+                            <h3>Gen AI & Agentic Developer</h3>
+                            <p class="meta-text">Pak Angels | Oct 2026</p>
+                            <p>Completed intensive training on Generative AI and Multi-Agent AI workflows for business automation.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Intro to Machine Learning</h3>
+                            <p class="meta-text">Kaggle | Aug 2026</p>
+                            <p>Gained hands-on experience with fundamental ML concepts and model validation.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Intermediate Machine Learning</h3>
+                            <p class="meta-text">Kaggle | Aug 2026</p>
+                            <p>Mastered pipelines, cross-validation, XGBoost, and strategies to prevent data leakage.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
-    </div>
+    </main>
 
-    <!-- Projects Section (2-Column Layout) -->
-    <div id="projects" class="page-section alternate-bg">
-        <h2 class="section-heading">Recent Projects:</h2>
-        <div class="center-container">
-            <div class="content-card" style="border-radius: 10px;">
-                <h3>StudyVault AI</h3>
-                <p>An academic study assistant powered by multi-document RAG and smart flashcards to optimize learning.</p>
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>About</h3>
+                <p>Talha Ahmad - Building intelligent agentic AI systems and modern learning tools.</p>
             </div>
-            <div class="content-card" style="border-radius: 10px;">
-                <h3>PathPilot AI</h3>
-                <p>An intelligent education and career navigator that generates personalized roadmaps for students pretty easily.</p>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#certs">Certifications</a>
             </div>
-            <div class="content-card" style="border-radius: 10px;">
-                <h3>Document Summarizer</h3>
-                <p>A full-stack application that rapidly summarizes PDF, DOCX, and TXT files using a Groq-hosted open-source model.</p>
+            <div class="footer-col">
+                <h3>Connect</h3>
+                <a href="mailto:talhakhan111221@gmail.com">Email Me</a>
+                <a href="https://linkedin.com/in/talha-ahmad-a018203b7">LinkedIn</a>
+                <a href="https://github.com/Professorlegit-66">GitHub</a>
             </div>
         </div>
-    </div>
-
-    <!-- Certifications Section (2-Column Layout) -->
-    <div id="certs" class="page-section">
-        <h2 class="section-heading">Certifications:</h2>
-        <div class="center-container">
-            <div class="content-card" style="border-radius: 10px;">
-                <h3>Gen AI & Agentic Developer</h3>
-                <p class="meta-text">ASPIRE Pakistan | Oct 2026</p>
-                <p>Completed intensive training on Generative AI and Multi-Agent AI workflows for business automation.</p>
-            </div>
-            <div class="content-card" style="border-radius: 10px;">
-                <h3>Intermediate Machine Learning</h3>
-                <p class="meta-text">Kaggle | Aug 2026</p>
-                <p>Mastered pipelines, cross-validation, XGBoost, and strategies to prevent data leakage.</p>
-            </div>
-            <div class="content-card" style="border-radius: 10px;">
-                <h3>Intro to Machine Learning</h3>
-                <p class="meta-text">Kaggle | Aug 2026</p>
-                <p>Gained hands-on experience with fundamental ML concepts and model validation.</p>
-            </div>
+        <div class="footer-copyright">
+            <p>&copy; 2026 Talha Ahmad. All rights reserved.</p>
         </div>
-    </div>
-
-    <!-- Contact Footer -->
-    <div id="contact" class="footer-area">
-        <h2>Let's Connect:</h2>
-        <p>Feel free to reach out for collaborations or opportunities.</p>
-        <div class="footer-links">
-            <a href="mailto:talhakhan111221@gmail.com">Email Me</a>
-            <a href="https://linkedin.com/in/talha-ahmad-a018203b7">LinkedIn</a>
-            <a href="https://github.com/Professorlegit-66">GitHub</a>
-        </div>
-    <div class="footer-copyright">
-        <p>&copy; Talha Ahmad. 2026 All rights reserved.</p>
-    </div>
-    </div>
+    </footer>
 
 </body>
+</html>
