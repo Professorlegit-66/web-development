@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        /* Descendant Combinator */
+        div p {
+            color: red;
+        }
+
+        /* Adjacent Sibling Combinator */
+        div + p {
+            color: blue;
+        }
+
+        /* General Sibling Combinator */
+        div > p {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <label style="font-size: 35px">List of Items:</label>
+    <ol style="font-size: 30px;" type="1">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <label style="font-size: 35px">List of Items:</label>
+    <ul style="font-size: 30px;">
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+    </ul>
+
+    <dl style="font-size: 30px;">
+        <dt>Term 1:</dt>
+        <dd>Description for Term 1</dd>
+        <dt>Term 2:</dt>
+        <dd>Description for Term 2</dd>
+        <dt>Term 3:</dt>
+        <dd>Description for Term 3</dd>
+    </dl>
+
+    <img src="https://via.placeholder.com/150" alt="Placeholder Image" style="display: block; margin: 20px auto;">
+    <a href="https://www.example.com" style="font-size: 30px;" style="text-decoration: none;">Visit Example.com</a><br>
+    <span style="font-size: 30px;">This is a span element.</span>
+
+    <br><br>
+
+    <p>This is a</p><span> simple </span>
+    <div>example.</div>
+    <a href="#">Click Here</a>
+    <br>
+    <br>
+
+    <label for="text">Full Name:</label><br>
+    <input type="text" placeholder="Enter Your Full Name" pattern="[Aa-Zz]"><br><br>
+
+    <label for="file">Upload Profile Picture:</label><br>
+    <input type="file">
+    <br>
+    <br>
+    <input type="checkbox">I agree to the terms and conditions<br>
+    <br>
+    <br>
+
+    <div>
+        <p>Paragraph 1</p>
+        <section>
+            <p>Paragraph 2</p>
+        </section>    
+    </div>
+        <p>Paragraph 3</p>
+        <div>
+            <p>Paragraph 4</p>
+        </div>
+
+    <br>
+    <br>
+</body>
+</html>
