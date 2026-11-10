@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new_style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="form-wrapper">
+        <form method="post">
+            <fieldset>
+                <legend>User Details</legend>
+                
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter Your Name" required pattern="[A-Za-z]+">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter Your Email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Enter Your Password" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="bday">Date of Birth:</label>
+                    <input type="date" id="bday" required>
+                </div>
+
+                <div class="radio-group">
+                    <span class="label-title">Gender:</span>
+                    <input type="radio" value="F" name="gender" id="female">
+                    <label for="female">Female</label> 
+                    
+                    <input type="radio" value="M" name="gender" id="male">
+                    <label for="male">Male</label>
+                </div>
+
+                <div class="file-group">
+                    <label>Upload Resume:</label>
+                    <input type="file" accept=".docx, .pdf, .txt">
+                </div>
+            </fieldset>
+
+            <section class="button-group">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </section>
+        </form>
+    </div>
+</body>
+</html>
