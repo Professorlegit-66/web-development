@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Task 1</title>
+</head>
+<body>
+
+    <h2>Student Registration:</h2>
+  <form method="get">
+    <label>Name:</label> <br>
+        <input type="text" required name="name" placeholder="Enter your Name" pattern="[Aa-Zz]+"> <br>
+    <label> Email:</label> <br>
+        <input type="email" placeholder="Enter your Email"> <br>
+    <br>
+    <br>
+
+    <h4>Profile Picture:</h4>
+    <input type="file">
+    <h4>Enter Marks:</h4>
+    <form method="get"></form>
+        <label>Enter Marks:</label> <br>
+            <input type="text" required name="marks" placeholder="Enter your Marks" pattern="^[0-9]+$"> <br>
+    <br>
+
+    <h4>Gender:</h4>
+    <input type="radio" name="gender" value="male"> Female
+    <input type="radio" name="gender" value="female"> Male
+
+    <br>
+    <br>
+
+    <h4>Submission Date:</h4>
+    <input type="date">
+
+    <br>
+    <br>
+
+    <h4>Select Program:</h4>
+    <select name="program" placeholder="Select your Program">
+      <option value="cs">BSCS</option>
+      <option value="it">BSAI</option>
+      <option value="ec">BSDS</option>
+      <option value="ec">BSCYS</option>
+      <option value="ec">BSSE</option>
+    </select>
+
+    <br>
+    <br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+</body>
+</html>
