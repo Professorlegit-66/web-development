@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">
+          <i class="bi bi-laptop me-1"></i> My Website
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Skills
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#skills">HTML</a></li>
+                <li><a class="dropdown-item" href="#skills">CSS</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#skills">Bootstrap</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-light" type="submit">
+              <i class="bi bi-search"></i> Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <header id="about" class="bg-light text-center py-5 border-bottom">
+      <div class="container">
+        <h1 class="fw-bold text-primary">Welcome to My Portfolio</h1>
+        <p class="fs-5 text-secondary mt-3">
+          This is a responsive website created using HTML, Bootstrap 5, and Bootstrap Icons for Web Development Lab 08.
+        </p>
+        <a href="#skills" class="btn btn-primary mt-2">
+          <i class="bi bi-arrow-down-circle me-1"></i> View My Skills
+        </a>
+      </div>
+    </header>
+
+    <div id="skills" class="container my-5">
+      <h2 class="text-center fw-bold mb-4">My Web Skills</h2>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="images/html-1.webp" class="card-img-top w-50 mx-auto mt-3" alt="HTML Logo">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">HTML5</h5>
+              <p class="card-text text-muted">
+                HTML is used to create the basic structure and content of web pages using tags and elements.
+              </p>
+              <a href="#" class="btn btn-primary">
+                <i class="bi bi-code-slash me-1"></i> More Info
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="images/css3.webp" class="card-img-top w-50 mx-auto mt-3" alt="CSS Logo">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">CSS3</h5>
+              <p class="card-text text-muted">
+                CSS is used to style web pages by adding colors, fonts, spacing, and responsive layouts.
+              </p>
+              <a href="#" class="btn btn-primary">
+                <i class="bi bi-palette me-1"></i> More Info
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="images/bootstrap-4.webp" class="card-img-top w-50 mx-auto mt-3" alt="Bootstrap Logo">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Bootstrap 5</h5>
+              <p class="card-text text-muted">
+                Bootstrap is a front-end framework that makes building mobile-friendly websites fast and easy.
+              </p>
+              <a href="#" class="btn btn-primary">
+                <i class="bi bi-bootstrap me-1"></i> More Info
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="contact" class="bg-dark text-white text-center py-4 mt-5">
+      <div class="container">
+        <h5 class="fw-bold">Contact Information</h5>
+        <p class="mb-1">
+          <i class="bi bi-geo-alt me-1"></i> Kohat University of Science &amp; Technology (KUST)
+        </p>
+        <p class="mb-3">
+          <i class="bi bi-envelope me-1"></i> example@kust.edu.pk | <i class="bi bi-telephone ms-2 me-1"></i> +92 300 0000000
+        </p>
+
+        <div class="mb-3">
+          <a href="https://facebook.com" class="text-white fs-4 me-3" target="_blank">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://linkedin.com" class="text-white fs-4 me-3" target="_blank">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://instagram.com" class="text-white fs-4 me-3" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://github.com" class="text-white fs-4" target="_blank">
+            <i class="bi bi-github"></i>
+          </a>
+        </div>
+
+        <p class="small text-secondary mb-0">&copy; 2026 My Website. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
